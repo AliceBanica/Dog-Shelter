@@ -6,6 +6,11 @@ export default {
             "home-img": "url('./src/assets/home-page.jpg')",
             "contact-img": "url('./src/assets/contact.jpg')",
             "about-img": "url('./src/assets/about.jpg')",
+            "bg-s1-img": "url('./src/assets/bg-1.jpg')",
+            "bg-s2-img": "url('./src/assets/bg-2.jpg')",
+            "bg-s3-img": "url('./src/assets/bg-3.jpg')",
+            "bg-s4-img": "url('./src/assets/bg-4.jpg')",
+            "bg-s5-img": "url('./src/assets/bg-5.jpg')",
         }),
         extend: {
             animation: {

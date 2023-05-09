@@ -5,7 +5,7 @@ class DogRepository {
     dogArr = [
         {
             id: 1,
-            name: "alice",
+            name: "Blue",
             race: "Chiuaua",
             age: "3",
             adopted: true,
@@ -15,7 +15,7 @@ class DogRepository {
         },
         {
             id: 2,
-            name: "toni",
+            name: "Archie",
             race: "Pitbull",
             age: "4",
             adopted: false,
@@ -25,7 +25,7 @@ class DogRepository {
         },
         {
             id: 3,
-            name: "dog1",
+            name: "Bowie",
             race: "Chiuaua",
             age: "7",
             adopted: false,
@@ -35,7 +35,7 @@ class DogRepository {
         },
         {
             id: 4,
-            name: "gog2",
+            name: "Eli",
             race: "Golden Retriever",
             age: "9",
             adopted: true,
@@ -45,7 +45,7 @@ class DogRepository {
         },
         {
             id: 5,
-            name: "dog3",
+            name: "Harley",
             race: "Bichon",
             age: "10",
             adopted: false,
@@ -55,7 +55,7 @@ class DogRepository {
         },
         {
             id: 6,
-            name: "max",
+            name: "Max",
             race: "Golden Retriever",
             age: "6",
             adopted: false,
@@ -83,6 +83,7 @@ class DogRepository {
                 "https://images.unsplash.com/photo-1633722715463-d30f4f325e24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
             ),
         },
+
         {
             id: 9,
             name: "Bull",
@@ -198,6 +199,7 @@ class DogRepository {
                     name: dog.name,
                     race: dog.race,
                     age: dog.age,
+                    img: dog.img,
                     adopted: true,
                 };
             }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo1.png"
 
 const Navbar = () => {
     const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
@@ -9,15 +10,10 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="w-full sticky top-0 z-20 bg-[#F0F0EE] shadow">
-            <div className="relative container mx-auto pt-8 pb-8 lg:w-[80%]">
-                <div className="flex items-center  ">
-                    <div className="flex justify-start flex-1">
-                        {/* <div> */}
-                        <Link to="/" className='text-xl text-orange-800 font-bold text-[2.5rem] italic select-none group transition duration-300 pointer'>Lucky Paws
-                        </Link>
-                    </div>
-                    <div className="hidden md:flex flex-1 justify-around space-x-10">
+        <nav className="w-full sticky top-0 z-30 bg-[#FBD8B0] shadow">
+            <div className="relative container mx-auto pt-2 pb-2 lg:w-[80%]">
+                <div className="flex items-center justify-start">
+                    <div className="hidden md:flex flex-[1.5] justify-start space-x-10">
                         <Link to="/" className=' text-xl text-black select-none group transition duration-300'>Home
                             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-black"></span>
                         </Link>
@@ -27,6 +23,14 @@ const Navbar = () => {
                         <Link to="/allDogs" className=' text-xl text-black select-none group transition duration-300'>Our Dogs
                             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-black"></span>
                         </Link>
+
+                    </div>
+                    <div className="flex justify-center flex-1">
+                        <Link to="/" className='text-xl text-orange-800 font-bold text-[2.5rem] italic select-none group transition duration-300 pointer'>
+                            <img className="h-[4rem]" src={logo} alt="logo" />
+                        </Link>
+                    </div>
+                    <div className="flex justify-end flex-[1.5]">
                         <Link to="/contact" className=' text-xl text-black select-none group transition duration-300'>Contact
                             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-black"></span>
                         </Link>
