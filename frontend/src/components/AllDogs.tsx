@@ -176,7 +176,7 @@ const AllDogs = () => {
             <div className='flex flex-wrap w-[100%] mx-auto justify-around rounded-lg'>
               {allDogs.map((dog: any, index) => {
                 if (dog.race === "Chiuaua") {
-                  return <div className='relative flex mt-[3rem] shadow-[10px_25px_20px_-5px_rgba(0,0,0,0.3)]'>
+                  return <div key={index} className='relative flex mt-[3rem] shadow-[10px_25px_20px_-5px_rgba(0,0,0,0.3)]'>
                     <div className='flex-[1.7]'>
                       <img className='rounded-l-lg w-[25rem] h-[16rem]' src={dog.img} alt="" />
                     </div>
@@ -212,7 +212,7 @@ const AllDogs = () => {
             <div className='flex flex-wrap w-[100%] mx-auto justify-around rounded-lg  '>
               {allDogs.map((dog: any, index) => {
                 if (dog.race === "Golden Retriever") {
-                  return <div className='relative flex mt-[3rem] shadow-[10px_25px_20px_-5px_rgba(0,0,0,0.3)]'>
+                  return <div key={index} className='relative flex mt-[3rem] shadow-[10px_25px_20px_-5px_rgba(0,0,0,0.3)]'>
                     <div className='flex-[1.5]'>
                       <img className='rounded-l-lg w-[22rem] h-[16rem]' src={dog.img} alt="" />
                     </div>
@@ -248,7 +248,7 @@ const AllDogs = () => {
             <div className='flex flex-wrap w-[100%] mx-auto justify-around rounded-lg '>
               {allDogs.map((dog: any, index) => {
                 if (dog.race === "Pitbull") {
-                  return <div className='relative flex mt-[3rem] shadow-[10px_25px_20px_-5px_rgba(0,0,0,0.3)]'>
+                  return <div key={index} className='relative flex mt-[3rem] shadow-[10px_25px_20px_-5px_rgba(0,0,0,0.3)]'>
                     <div className='flex-[1.7]'>
                       <img className='rounded-l-lg w-[25rem] h-[16rem]' src={dog.img} alt="" />
                     </div>
@@ -285,7 +285,7 @@ const AllDogs = () => {
             <div className='flex flex-wrap w-[100%] mx-auto justify-around rounded-lg'>
               {allDogs.map((dog: any, index) => {
                 if (dog.race !== "Chiuaua" && dog.race !== "Pitbull" && dog.race !== "Golden Retriever") {
-                  return <div className='relative flex mt-[3rem] shadow-[10px_25px_20px_-5px_rgba(0,0,0,0.3)]'>
+                  return <div key={index} className='relative flex mt-[3rem] shadow-[10px_25px_20px_-5px_rgba(0,0,0,0.3)]'>
                     <div className='flex-[1.7]'>
                       <img className='rounded-l-lg w-[25rem] h-[16rem]' src={dog.img} alt="" />
                     </div>

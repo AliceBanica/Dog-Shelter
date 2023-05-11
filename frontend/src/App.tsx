@@ -5,8 +5,8 @@ import AllDogs from './components/AllDogs';
 import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
 
-function App() {
 
+function App() {
   return (
     <HashRouter>
       <Navbar />
@@ -19,5 +19,6 @@ function App() {
     </HashRouter>
   )
 }
+
 
 export default App
