@@ -4,6 +4,7 @@ import Home from "./components/Home"
 import AllDogs from './components/AllDogs';
 import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
+import Surrender from './components/Surrender';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/allDogs" element={<AllDogs />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/surrender" element={<Surrender />} />
       </Routes>
     </HashRouter>
   )
