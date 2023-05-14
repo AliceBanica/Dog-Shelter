@@ -47,7 +47,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="hidden sm:ml-6 sm:block absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <div className="hidden sm:ml-6 sm:block absolute inset-y-0 right-0  items-center pr-2 sm:static sm:inset-auto sm:pr-0">
                         <button type="button" className="bg-indigo-800 text-gray-300 hover:bg-indigo-900 hover:text-gray-300 px-[1rem] rounded-lg">
                             <span className="sr-only">View form</span>
                             <Link to="/surrender" className="block rounded-md px-1 py-1 text-base font-medium" onClick={() => setCurrentMenu("/surrender")}>Surrender Dog</Link>

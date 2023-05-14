@@ -12,6 +12,7 @@ const AboutUs = () => {
     const [dogName, setDogName] = useState<string>("");
     const [dogRace, setDogRace] = useState<string>("");
     const [dogAge, setDogAge] = useState<string>("");
+    const [dogSex, setDogSex] = useState<string>("");
     const [dogAdopted, setDogAdopted] = useState<boolean>(false);
     let selectBreed = document.getElementById("selected-race");
 
@@ -58,22 +59,25 @@ const AboutUs = () => {
             name: dogName,
             race: dogRace,
             age: dogAge,
+            sex: dogSex,
             adopted: false,
             img: "No img"
         });
         alert("Another friend joined us today!")
     }
 
-    function updateDog(id: any, name: string, race: string, age: number, img: any) {
+    function updateDog(id: any, name: string, race: string, age: number, sex: string, img: any) {
         const prevName = name;
         const prevRace = race;
         const prevAge = age;
+        const prevSex = sex
         const prevImg = img;
         updateDogFetch({
             id: id,
             name: prevName,
             race: prevRace,
             age: prevAge,
+            sex: prevSex,
             img: prevImg,
             adopted: true
         });
@@ -196,6 +200,37 @@ const AboutUs = () => {
                     {/* <h1 className='text-[2rem] border-b-[0.2rem] border-gray-500 mb-[4rem]'>Chiuaua</h1> */}
                     <div className='flex flex-wrap w-[100%] mx-auto justify-around rounded-lg'>
                         {allDogs.map((dog: any, index) => {
+                            return <div key={index} className='product'>
+                                <div className="">
+                                    <div className="product__photo">
+                                        <div className="photo-container">
+                                            <div className="photo-main">
+                                                <img src={dog.img} alt="green apple slice" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product__info">
+                                    <div className="title">
+                                        <h1>{dog.name}</h1>
+                                        <span>{dog.race}</span>
+                                    </div>
+                                    <div className="description">
+                                        <h3>BENEFITS</h3>
+                                        <ul>
+                                            <li>Age: {dog.age}</li>
+                                            <li>Sex: {dog.sex}</li>
+                                            <li>Apples may be good for bone health</li>
+                                            <li>They're linked to a lowest risk of diabetes</li>
+                                        </ul>
+                                    </div>
+                                    {/* <button className="buy--btn">ADD TO CART</button> */}
+                                    {dog.adopted ? <button className="adopt--btn-disabled ">Adopted</button> : <button className='adopt--btn ' onClick={() => updateDog(dog.id, dog.name, dog.race, dog.age, dog.sex, dog.img)} >Adopt me</button>}
+                                </div>
+                            </div>
+                        })}
+
+                        {/* {allDogs.map((dog: any, index) => {
                             return <div key={index} className='relative flex mt-[3rem] shadow-[10px_25px_20px_-5px_rgba(0,0,0,0.3)]'>
                                 <div className='flex-[1.7]'>
                                     <img className='rounded-l-lg w-[25rem] h-[16rem]' src={dog.img} alt="" />
@@ -219,12 +254,12 @@ const AboutUs = () => {
                                 </div>
                             </div>
                         }
-                        )}
+                        )} */}
 
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
 
         {/* <section className='bg-color-section-odd n w-full  z-[10] pb-[4rem] '>
             <div className=' mx-auto w-[70%] '>
@@ -336,7 +371,7 @@ const AboutUs = () => {
         </section> */}
 
 
-        <Footer />
+        < Footer />
     </>
         // <section className=' w-full bg-color-about z-[-1]'>
         //     <div className='relative flex flex-col mx-auto items-center  lg:w-[60%]  text-gray-300 pt-[5rem]' id="about" >
