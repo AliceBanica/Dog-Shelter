@@ -17,10 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* section {
-    box-shadow: 0 4px 8px 4px gray;
-} */
-
 .bg-color {
     background: rgb(19, 27, 43);
     background: linear-gradient(
@@ -67,6 +63,36 @@ html {
         rgba(19, 27, 43, 1) 0%,
         rgba(42, 57, 89, 1) 68%,
         rgba(49, 46, 99, 1) 100%
+    );
+}
+
+.bg-color-contact {
+    background: rgb(19, 27, 43);
+    background: linear-gradient(
+        188deg,
+        rgba(19, 27, 43, 0.9) 0%,
+        rgba(42, 57, 89, 1) 69%,
+        rgba(17, 24, 38, 0.9) 100%
+    );
+}
+
+.bg-color-btn {
+    background: rgb(137, 120, 162);
+    background: linear-gradient(
+        236deg,
+        rgba(137, 120, 162, 1) 0%,
+        rgba(124, 128, 184, 1) 69%,
+        rgba(84, 47, 117, 1) 100%
+    );
+}
+
+.bg-color-btn:hover {
+    background: rgb(60, 51, 74);
+    background: linear-gradient(
+        236deg,
+        rgba(60, 51, 74, 1) 0%,
+        rgba(27, 28, 42, 1) 69%,
+        rgba(78, 56, 97, 1) 100%
     );
 }
 
@@ -269,7 +295,7 @@ html {
     margin: auto;
     padding: 2.5rem 0;
     min-width: 30rem;
-    background-color: white;
+    background-color: #e5e7eb;
     border-radius: 5px;
     margin-top: 3rem;
 }
@@ -303,6 +329,7 @@ html {
     max-height: 20rem;
     filter: saturate(150%) contrast(120%) hue-rotate(10deg)
         drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+    border-radius: 0.5rem;
 }
 
 .product__info {
@@ -376,4 +403,19 @@ html {
     background-color: #a5b4fc;
     color: #4b5563;
     box-shadow: 2px 2px 25px -7px #4c4c4c;
+}
+
+.placeholder-color {
+    color: darkGray;
+}
+
+select {
+    color: grey;
+}
+
+select option {
+    color: black;
+}
+select option:first-child {
+    color: grey;
 }

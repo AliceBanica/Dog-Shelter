@@ -1,24 +1,22 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
-import Home from "./components/Home"
-import AllDogs from './components/AllDogs';
+import Home from "./components/Home";
 import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
-import Surrender from './components/Surrender';
+import SurrenderDog from './components/SurrenderDog';
 
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/allDogs" element={<AllDogs />} />
-        <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/surrender" element={<Surrender />} />
+        <Route path="/surrender-dog" element={<SurrenderDog />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 

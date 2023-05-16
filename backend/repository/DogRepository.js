@@ -9,6 +9,8 @@ class DogRepository {
             race: "Chiuaua",
             age: "3",
             sex: "Male",
+            trained: "Yes",
+            vaccinated: "Yes",
             adopted: true,
             img: new URL(
                 "https://images.unsplash.com/photo-1558349359-c00462b97aee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -20,6 +22,8 @@ class DogRepository {
             race: "Pitbull",
             age: "4",
             sex: "Female",
+            trained: "No",
+            vaccinated: "Yes",
             adopted: false,
             img: new URL(
                 "https://nationaltoday.com/wp-content/uploads/2022/07/14-Pitbull-Awareness-Month-1200x834.jpg"
@@ -31,6 +35,8 @@ class DogRepository {
             race: "Chiuaua",
             age: "7",
             sex: "Male",
+            trained: "No",
+            vaccinated: "Yes",
             adopted: false,
             img: new URL(
                 "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQ1kGOfGtsRB3ErRPkTXIuq2Fbt-4ZgjwHWdsABcP2oJbZVemNI0pZjtzMv_Ng2RBZZxvmYfPCmUbrYPKM"
@@ -42,6 +48,8 @@ class DogRepository {
             race: "Golden Retriever",
             age: "9",
             sex: "Female",
+            trained: "No",
+            vaccinated: "No",
             adopted: true,
             img: new URL(
                 "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSwKaXWLlVAaqLNdbOEH1Eljf3Hw6ziuBqKma_qG0YbAqK4lRdv6G-XoJe6PoSkMaP99rNzIk-Fdyn1UtA"
@@ -53,6 +61,8 @@ class DogRepository {
             race: "Bichon",
             age: "10",
             sex: "Male",
+            trained: "Yes",
+            vaccinated: "Yes",
             adopted: false,
             img: new URL(
                 "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQQFpWF4zN2V5f8XKGKyEtxJ3VuKFNtrNrtQOSPN6tDrX-PobKIPS-hXT-AqWgm41toRvB6zsZ_NDHc6jY"
@@ -64,6 +74,8 @@ class DogRepository {
             race: "Golden Retriever",
             age: "6",
             sex: "Male",
+            trained: "No",
+            vaccinated: "Yes",
             adopted: false,
             img: new URL(
                 "https://images.unsplash.com/photo-1602241628512-459cdd3234fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -75,6 +87,8 @@ class DogRepository {
             race: "Golden Retriever",
             age: "7",
             sex: "Male",
+            trained: "Yes",
+            vaccinated: "No",
             adopted: false,
             img: new URL(
                 "https://images.unsplash.com/photo-1633722715463-d30f4f325e24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -86,6 +100,8 @@ class DogRepository {
             race: "Golden Retriever",
             age: "1",
             sex: "Female",
+            trained: "Yes",
+            vaccinated: "Yes",
             adopted: false,
             img: new URL(
                 "https://images.unsplash.com/photo-1633722715463-d30f4f325e24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -98,6 +114,8 @@ class DogRepository {
             race: "Pitbull",
             age: "2",
             sex: "Male",
+            trained: "No",
+            vaccinated: "No",
             adopted: false,
             img: new URL(
                 "https://images.unsplash.com/photo-1600369671738-fa3a43efeced?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
@@ -109,6 +127,8 @@ class DogRepository {
             race: "German Shepherd",
             age: "2",
             sex: "Female",
+            trained: "No",
+            vaccinated: "Yes",
             adopted: false,
             img: new URL(
                 "https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8R2VybWFuJTIwU2hlcGhlcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
@@ -120,6 +140,8 @@ class DogRepository {
             race: "Husky",
             age: "2",
             sex: "Female",
+            trained: "Yes",
+            vaccinated: "No",
             adopted: false,
             img: new URL(
                 "https://images.unsplash.com/photo-1617895153857-82fe79adfcd4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8SHVza3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"

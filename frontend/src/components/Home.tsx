@@ -25,27 +25,22 @@ const Home = () => {
             </div>
         </section>
         <section className='w-full bg-color-about z-[-1]'>
-            <div className='relative flex flex-col mx-auto items-center  lg:w-[60%]  text-gray-300 pt-[5rem]' id="about" >
-                {/* <div className='flex justify-center items-center text-gray-400'>
-                    <div className=' flex  bg-gray-400 w-[1.5rem] h-[0.05rem]'></div>
-                    <span className='text-[1.5rem]'>&nbsp;&nbsp; WHO WE ARE&nbsp;&nbsp;  </span>
-                    <div className=' flex bg-gray-400 w-[1.5rem] h-[0.05rem]'></div>
-                </div> */}
-                <div className='relative flex justify-around items-center mt-[2rem] mb-[1rem] w-[90%]  pb-[5rem]'>
-                    <div className='flex-1 flex-wrap'>
+            <div className='relative flex flex-col mx-auto items-center  lg:w-[70%]   text-gray-300 pt-[5rem]' id="about" >
+                <div className='relative flex-col justify-center items-center xl:justify-center  md:flex md:flex-row md:justify-around md:items-center mt-[2rem] mb-[1rem] w-[90%]  pb-[5rem]'>
+                    <div className=' flex justify-center flex-col w-[70%] mx-auto xl:w-[30%] xl:mx-auto flex-wrap lg:mr-[1.5rem] xl:mr-[1rem] xl:ml-0 xl:w-fit'>
                         <p className='text-[2rem] '>LUCKY PAWS</p>
                         <p className='text-justify text-[1rem] text-gray-500 mt-[1rem]'>A place where all four-legged friends can call home.</p>
                         <p className='text-justify text-[1rem] text-gray-500 mb-[2rem]'>Created to bring joy to the World. </p>
-                        <Link to="/allDogs" className='bg-indigo-800 text-gray-300 hover:bg-indigo-900 hover:text-gray-300 text-[1.2rem]  py-[0.4rem] px-[1rem] rounded-lg  '>See our friends
+                        <Link to="/allDogs" className='w-fit  bg-indigo-800 text-gray-300 hover:bg-indigo-900 hover:text-gray-300 text-[1.2rem]  py-[0.4rem] px-[1rem] rounded-lg '>See our friends
                         </Link>
                     </div>
-                    <div className='flex flex- h-[20rem] '>
-                        <div className='flex-1'>
-                            <img className='rounded-lg  shadow-md shadow-gray-500 h-[100%] ' src={dogImg4} alt="" />
+                    <div className='flex justify-center  xl:w-[40%] h-[20rem] mt-[3rem] md:0'>
+                        <div className='md:flex-1 xl:flex xl:justify-end'>
+                            <img className='rounded-lg  shadow-md shadow-gray-500 h-[100%] xl:mr-0' src={dogImg4} alt="" />
                         </div>
-                        <div className='flex flex-1 flex-col h-[100%] ml-[1rem] justify-between'>
-                            <img className='h-[48%] rounded-lg shadow-md shadow-gray-500' src={dogImg2} alt="" />
-                            <img className='h-[48%] mt-[] rounded-lg shadow-md shadow-gray-500' src={dogImg3} alt="" />
+                        <div className='flex md:flex-1 flex-col h-[100%] ml-[1rem] justify-between'>
+                            <img className='h-[48%] xl:w-[80%] rounded-lg shadow-md shadow-gray-500' src={dogImg2} alt="" />
+                            <img className='h-[48%] xl:w-[80%] mt-[] rounded-lg shadow-md shadow-gray-500' src={dogImg3} alt="" />
                         </div>
                     </div>
                 </div>
@@ -53,11 +48,6 @@ const Home = () => {
         </section >
         <section className='w-full bg-color-quote z-[-1]'>
             <div className='relative flex flex-col mx-auto items-center  lg:w-[60%]  text-gray-300 pt-[5rem]' id="about" >
-                {/* <div className='flex justify-center items-center text-gray-400'>
-                    <div className=' flex  bg-gray-400 w-[1.5rem] h-[0.05rem]'></div>
-                    <span className='text-[1.5rem]'>&nbsp;&nbsp;REMINDER&nbsp;&nbsp;  </span>
-                    <div className=' flex bg-gray-400 w-[1.5rem] h-[0.05rem]'></div>
-                </div> */}
                 <div className='flex flex-col justify-center items-center mt-[3rem] mb-[5rem]'>
                     <p className='text-[1.5rem] flex justify-center items-center w-[70%] mx-auto text-center'>“Such short little lives our pets have to spend with us, and they spend most of it waiting for us to come home each day. ” </p>
                     <p className='flex justify-end w-[70%] text-[1rem] mt-[1rem] text-gray-400'>– John Grogan (Author, Marley & Me)</p>

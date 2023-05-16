@@ -8,13 +8,13 @@ const Footer = () => {
         <img className='h-[14rem]' src={footerImg} alt="" />
         <div className='' >
           <h1 className='text-[1.6rem] select-none'>Contact us</h1>
-          <h1 className='text-[1.2rem] mt-[1rem]'>Email: dog.shelter@gmail.com</h1>
-          <h1 className='text-[1.2rem]'>Tel: 0777 845 889</h1>
+          <h1 className='text-[1.2rem] mt-[1rem]'>Email: dog.shelter@shelter.com</h1>
+          <h1 className='text-[1.2rem]'>Tel: 0777 000 888</h1>
         </div>
         <div>
           <h1 className='text-[1.6rem] select-none'>Visit our friend's home </h1>
           <h1 className='text-[1.2rem] mt-[1rem]'>Bucharest, Sector 1</h1>
-          <h1 className='text-[1.2rem] '>Ploiesti, Sector 1</h1>
+          <h1 className='text-[1.2rem] '> &nbsp;  </h1>
         </div>
       </div>
     </section>
