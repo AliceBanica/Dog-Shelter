@@ -6,8 +6,8 @@ import addressImg from "../assets/address.png"
 const Contact = () => {
   return (
     <section className='absolute top-0 h-screen w-full bg-color overflow-hidden z-[-1]'>
-      <div className='flex justify-center items-center w-[70%] mx-auto h-full '>
-        <div className='flex w-full  bg-color-contact rounded-md'>
+      <div className='flex justify-center items-center w-[70%] h-full mx-auto max-w-4xl'>
+        <div className='flex flex-col md:flex-row  w-full  bg-color-contact rounded-md'>
           <div className='flex flex-col flex-1  py-[2rem] px-[2rem] '>
             <h1 className='text-[1.7rem] tracking-wide text-zinc-400'>Where to find us: </h1>
             <h1 className='text-[0.7rem] mt-[1rem] text-gray-400 font-bold'>CONTACT DETAILS</h1>
