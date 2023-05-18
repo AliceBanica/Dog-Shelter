@@ -1,6 +1,7 @@
 const DogRepository = require("../repository/DogRepository.js");
 const bodyParser = require("body-parser");
 const express = require("express");
+const serverless = require("serverless-http");
 
 const app = express();
 const port = 3000;
@@ -61,3 +62,4 @@ app.delete("/allDogs/deleteDog/:uuid", (req, res) => {
 });
 
 module.exports = app;
+module.exports.handler = serverless(app);
